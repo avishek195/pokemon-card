@@ -19,7 +19,6 @@ const Pokedex = () => {
     const poke = await axios.all(
       eachDetails.map(async (e) => await axios.get(e.url))
     );
-    console.log(pokeDetails.data);
     const obj = [];
     poke.map((d) => {
       obj.push({
@@ -32,28 +31,12 @@ const Pokedex = () => {
           d.data.sprites.back_default ||
           d.data.sprites.back_shiny,
       });
-      // setPokemon((prev) => [
-      //   ...prev,
-      //   {
-      //     id: d.data.id,
-      //     name: d.data.name,
-      //     img:
-      //       d.data.sprites.other.dream_world.front_shiny ||
-      //       d.data.sprites.front_shiny ||
-      //       d.data.sprites.front_default ||
-      //       d.data.sprites.back_default ||
-      //       d.data.sprites.back_shiny,
-      //   },
-      // ]);
       setPokemon(obj);
     });
-
-    console.log(obj);
   };
 
   const changeNext = () => {
     setPokemonUrl(next);
-    // setPokemon([]);
   };
   const changePrev = () => {
     setPokemonUrl(prev);

@@ -1,11 +1,11 @@
+import { Link } from "react-router-dom";
+
 const PokemonCard = ({ id, img, name }) => {
   return (
-    <div className="card" key={id}>
-      {/* <div className="pics"> */}
+    <Link to={`/pokemon/${id}`} className="card" key={id}>
       <img src={img} className="pokemon-img" alt={name} />
-      {/* </div> */}
       <h3>{name.toUpperCase()}</h3>
-    </div>
+    </Link>
   );
 };
 

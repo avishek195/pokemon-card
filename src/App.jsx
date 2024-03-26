@@ -1,10 +1,9 @@
-import Pokedex from "./components/Pokedex/Pokedex";
-import Search from "./components/Search/Search";
+import CustomRoutes from "./routes/CustomRoutes";
 
 function App() {
   return (
     <>
-      <Pokedex />
+      <CustomRoutes />
     </>
   );
 }
