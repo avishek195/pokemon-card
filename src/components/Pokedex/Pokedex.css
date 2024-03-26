@@ -24,44 +24,25 @@ height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     gap: 10px;
 }
 
 .card{
-    /* padding-top: 15px; */
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    height: 500px;
-    width: 400px;
-    flex-basis: 30%;
+    height: 300px;
+    width: 350px;
     flex-direction: column;
-    /* border: 2px solid red; */
-   
 }
 
 .card:hover{
     cursor: pointer;
     background-color: rgb(199, 180, 216);
 }
-/* .pics{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70%;
-    border: 2px solid blue;
-    width: 100%;
-    border: 2px solid red;
-} */
 .pokemon-img{
-    /* font-size: 100px; */
-    /* border: 2px solid red; */
     width: 100%;
     height: 90%;  
-    /* font-size: 10px; */
-    object-fit: cover;
   }
   h3{
     letter-spacing: 5px;

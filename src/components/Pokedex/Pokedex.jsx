@@ -25,7 +25,7 @@ const Pokedex = () => {
         id: d.data.id,
         name: d.data.name,
         img:
-          d.data.sprites.other.dream_world.front_shiny ||
+          d.data.sprites.other.dream_world.front_default ||
           d.data.sprites.front_shiny ||
           d.data.sprites.front_default ||
           d.data.sprites.back_default ||
